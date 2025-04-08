@@ -1,0 +1,8 @@
+.container{
+    background-color: #181818;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

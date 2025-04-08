@@ -1,0 +1,11 @@
+.container{
+    background-color: #141414;
+    padding: 80px;
+    color:white;
+}
+.container ul{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    gap: 2em;
+}
