@@ -1,5 +1,5 @@
 //axios permite a comunicação com as paginas http (https)
-import axios from "axios";
+import axios from 'axios'
 //as ferramentas começadas com use são hooks de manuseio da biblioteca React
 import React, {useState, useEffect} from "react";
 import { Card } from './Card';
@@ -29,19 +29,19 @@ export function Lista(){
                 console.log('Error', error);
             });
     },[]);
-    const handleOpenModal = (movie)=>{
+    const handleOpenModal=(movie)=>{
         setSelectedMovie(movie);
     };
     const handleCloseModal=()=>{
         setSelectedMovie(null);
-    };
+    };  
     return(
         <div className={estilos.container}>
             <figure style ={{display:'flex', flexWrap:'wrap'}}>
                 {movies.map(movie=>(
                     <Card key={movie.id}
                     movie={movie}
-                    onOpenModal = {handleOpenModal}
+                    onOpenModal={handleOpenModal}
                     />
                 ))}
             </figure>

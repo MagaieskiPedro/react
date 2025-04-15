@@ -1,15 +1,16 @@
 import { Cabecalho } from "../componentes/Cabecalho";
 import { BarraNavegacao } from "../componentes/Barranavegacao";
-import { Conteudo } from "../componentes/Conteudo";
+//Outlet é um espaço que serve para renderizar o componente da rota, se clicar no link vai pra rota
+import { Outlet } from "react-router-dom";
 import { Rodape } from "../componentes/Rodape";
 //estrutura
 export function Inicial(){
     return(
         <>
-            <Cabecalho></Cabecalho>
-            <BarraNavegacao></BarraNavegacao>
-            <Conteudo></Conteudo>
-            <Rodape></Rodape>
+            <Cabecalho/>
+            <BarraNavegacao/>
+            <Outlet/>
+            <Rodape/>
         </>
     )
 }

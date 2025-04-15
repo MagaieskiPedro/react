@@ -9,3 +9,7 @@
     list-style-type: none;
     gap: 2em;
 }
+.container li, a{
+    color: crimson;
+    text-decoration:none;
+}
